@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id = "digClock"></div>
+	<script>
+		function digClock(){
+		let today = new Date() // 현재 날짜와 시간 추출 
+		let day = today.getMonth()+1 +'월'
+				+_today.getDate()+'일'; //월 추출
+		let time = today.getDate() + '일';
+				 + today.getMinutes() + '분'
+				 + today.getSeconds() + '초';
+		document.getElementsById('digClock').innerHTML=day+time;
+		setTimeout('digClock()',1000);	
+				 }	
+				 disClock();
+			</script>
+</body>
+</html>

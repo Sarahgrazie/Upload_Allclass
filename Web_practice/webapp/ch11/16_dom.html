@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function add(){
+		let img = document.createElement('img');  // img테그 생성 <img>
+		img.setAttribute('src','../ch03/karina.jpg');
+		//img.src='../ch03/karina.jpg';
+		//img.width=100;  //setAttribute가더 낫다
+		img.setAttribute('width',100);
+		img.setAttribute('height',100);
+		img.height=100;
+		document.body.appendChild(img);
+		
+	}; /tag, attribute, design 을 건들자
+</script>
+</head>
+<body>
+	<a href="#" onclick="add();">[이미지추가]</a>
+</body>
+</html>

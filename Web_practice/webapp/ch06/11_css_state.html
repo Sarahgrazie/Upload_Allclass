@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{color:white;}
+	h2::first-letter{
+		font-size: 30px; color: yellow; text-transform: uppercase;
+	}
+	h2::first-line{color: blue;}
+	input:focus{background-color: hotpink;}
+	input:checked + div.d1{   
+		background-color: gray;
+			}
+		input:chected + div.d2{
+			background-color: black;
+		}
+</style>	
+</head>
+<body>
+	<h2>문제) what are diffence beteween man and girl?</h2>
+	<p>정답 작성: <input type ="text"></p>
+	<h2>answer</h2>
+	힌트보기: <input type="checkbox">
+	<div>
+		남대문이 있는 곳이죠 
+	</div>
+	정답보기: <input type="checkbox">
+	<div class="d2">
+		서울
+	</div>
+	
+</body>
+</html>

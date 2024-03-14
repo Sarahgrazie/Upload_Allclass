@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>[Hong's Car]</p>
+	<p id="carname"></p>
+	<p id="carcolor"></p>
+	<p id="carspeed"></p>
+	<p>[Kim's Car]</p>
+	<p id="carname2"></p>
+	<p id="carcolor2"></p>
+	<p id="carspeed2"></p>
+	<p id="data"></p>
+	<script> // function 도 object다
+		function Car(name, color, speed){ // Car class 선언만 한 것이다.
+			this.name=name; // this 때문에 멤버변수가 된다.
+			this.color=color;
+			this.speed=speed;
+			this.speedup=function(){
+				return this.speed+10;
+			};
+			this.speeddown=function(){
+				return this.speed-10;
+			};
+		}
+		// object 생성
+		let hongCar=new Car('Sonata','blue', 100);
+		let kimCar=new Car('Jeep','red',70);
+		choiCar.price='5억';
+		delete choiCar.color;
+		document.getElementById('carname').textContent='자동차이름 : ' + choiCar.name;
+		document.getElementById('carcolor').textContent='자동차색상 : ' + choiCar.color;
+		document.getElementById('carname2').textContent='자동차이름 : ' + kimCar.name;
+		document.getElementById('carcolor2').textContent='자동차색상 : ' + kimCar.color;
+		documnet.getElementById('data').textContent='가격'+ choiCar.price;
+		
+	</script> 
+
+</body>
+</html>

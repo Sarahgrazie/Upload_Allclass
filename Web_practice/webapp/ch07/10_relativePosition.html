@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	h1{
+		background-color: yellow;
+		width: 400px;
+		height: 50px;
+	}
+	body{
+		font-weight: bold;
+		font-size: 12px;
+	}
+	.sp1{
+		position: static;
+		top: 100px; /*의미없다*/
+		background-color: cyan;
+		width: 400px;
+		height: 50px;
+	}
+	.sp2{
+		position: static; /* 기본값*/
+		left: 30px; /*적용안된다*/
+		background-color: orange;
+		width: 400px;
+		height: 50px;
+	}
+	.sp3{
+		background-color: lightgreen;
+		width: 400px;
+		height: 50px;
+	}
+</style>
+</head>
+<body>
+	<h1>Positioning Style1</h1>
+	<p class="sp1">정적 위치 설정 적용1</p>
+	<div class="sp2">정적 위치 설정 적용2</div>
+	<p class="sp3">기본 위치 설정</p>
+	<span>인라인 요소1</span>
+	<span>인라인 요소2</span>
+	<span>인라인 요소3/span>
+</body>
+</html>
+
+
+================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	div{
+		width: 200px;
+		height: 100px;
+		border: 1px solid;
+		background: yellow;
+		text-align: center;
+		line-height: 100px; /*줄간격*/
+	}
+	div:nth-of-type(2){
+		position: relative; /*기준?*/
+		top: 50px;
+		left: 50px;
+		background: green;
+	}
+</style>
+</head>
+<body>
+	<div>첫번째 요소</div>
+	<div>두번째 요소</div>
+	<div>세번째 요소</div>
+</body>
+</html>
+
+
+=======================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	main{
+		position: relative;
+		width: 300px;
+		height: 400px;
+		background: lightblue;
+	}
+	div{
+		width: 200px;
+		height: 100px;
+		border: 1px solid;
+		background: yellow;
+		text-align: center;
+		line-height: 100px; /*줄간격*/
+	}
+	div:nth-last-of-type(2){
+		position: absolute;
+		bottom:10px;
+		right: 10px;
+		background: red;
+	}
+</style>
+</head>
+<body>
+	<main> 
+		<div>첫번째 요소</div>
+		<div>두번째 요소</div>
+		<div>세번째 요소</div>
+	</main>
+</body>
+</html>
+

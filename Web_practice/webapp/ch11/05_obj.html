@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="upspeed"></p>
+	<p id="downspeed"></p>
+	<script>
+		let car={
+			speed:100,
+			speedup:function(a){
+				this.speed=this.speed+a;
+				if(this.speed>=300){
+					this.speed=50;
+					return this.speed;
+				}else{
+					return this.speed;
+				}
+			},// speedup end
+			speeddown:function(a){
+				this.speed=this.speed-a;
+				if(this.speed<0){
+					this.speed=0;
+					return this.speed;
+				}else{
+					return this.speed;
+				}				
+			} // speeddown end
+		}; // car end
+		let upspeed = document.getElementById('upspeed');
+		upspeed.textContent='속도 증가 : ' + car.speedup(100);
+		let downspeed = document.getElementById('downspeed');
+		downspeed.textContent='속도 감소 : ' + car.speeddown(30);
+	</script>
+</body>
+</html>
+

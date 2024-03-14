@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<p id ="msg1">내용1</p>
+		<p id ="msg2">내용2</p>
+		<p id ="msg3">내용3</p>
+		<script>
+			let obj={
+				m1:function(){
+					return'Hello bently';
+			},
+			m2:function(a){
+				let result=a;
+				return result;
+			},
+			m3: function(a,b){
+				return a+b;
+				}
+			}; 
+			document.getElementById('msg1').innetHTML=obj.m1();
+			document.getElementById('msg2').innetHTML=obj.m2(100);
+			document.getElementById('msg3').innetHTML=obj.m3(100,200);
+		</script>
+</body>
+</html>

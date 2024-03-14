@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>문자 입력 테그</h2>
+ <from>
+	<!--문자열 입력 <input type="test>-->
+	<!--name attribute
+			1. server 사용하는 변수명
+			2. 데이터베이스 컬럼명과 동일-->
+<p>이름<input type="text"
+		size="10 placeholder="이름입력"</p>
+<p>학과<input type="text"</p>
+<p>학과<input type="text"value="음악"</p>
+<hr>
+<p>
+	비밀번호<input type="password"
+	required placeholder="비밀번호입력"
+</p>
+<p> 
+	하고싶은 말 
+	<textarea rows="5" cols="30"></textarea>
+</p>
+<!--필드셋 시작 -->
+<fieldset>
+	<legend>개인 정보 입력</legend>
+	<p>
+		이름<input type="text">
+	</p>
+	<p>
+		학교<input type="text">
+	</p>
+</fieldset>
+
+<!--필드셋 끝 -->
+<!--옵션-라디오 입력양식:선택, 단일선택만 가능-->
+<h3>성별 선택 </h3>
+<p>
+	<input type="radio"
+	 name="sex" value="1"> 남자 
+	 <input type="radio"
+	 name="sex" value="2"> 여자 	 
+</p>						 
+<!--옵션 끝-->
+<!--체크박스- 다중선택-->
+좋아하는 과목 선택 
+<input type="checkbox"name="subject"
+value="java.checked">JAVA
+<input type="checkbox"name="subject"
+value="database">DATABASE
+<input type="checkbox"name="subject"
+value="web">WEB
+<!--체크박스 종료-->
+<!--버튼 시작-->
+<!--선택목록 시작 value: 서버로 넘기는 값-->
+<select name="gubun"
+	<optgroup label="아주 친한 사람">
+		<option value="1">가족</option>
+		<option value="2">친구</option>
+	</optgroup>
+	<optgroup label="덜 친한 사람">
+		<option value="3">회사</option>
+		<option value="4" selected>기타</option>
+	</optgroup>
+</select> 
+<!--선택몰고 끝-->
+<p><input type="submit" value="전송"</p>	
+ </from>
+</body>
+</html>

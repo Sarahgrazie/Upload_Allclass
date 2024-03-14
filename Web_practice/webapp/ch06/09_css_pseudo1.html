@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	a{text-decoration: none;}
+	/*가상 클래스*/
+	a:link{color: red;}
+	a:visited{color: blue;}
+	a:hover{color: red; }
+	a:active{color: black;}
+	div.d1{
+		border-top: 1px   red;  
+		border-bottom: 1px   red;  
+		width: 400px; 				
+		padding: 5px;
+	}
+	div.d1:hover{
+		background-color: yellow;
+	}
+	div.d2:hover{
+		border: 1px dashed brown; width: 400; padding: 5px;
+	}
+</style>
+</head>
+<body>
+<h2>연락처 관리 프로그램</h2>
+<p> <a href= "https://www.w3.org"> 회원목록 </a>
+	<a href= "https://www.w3.org"> 회원추가 </a>
+	<a href= "https://www.w3.org"> 회원수정 </a>
+	<a href= "https://www.w3.org"> 회원삭제 </a>
+</p>	
+<div class="d1">
+	<h3> 가상 클래스 1영역</h3>
+	마우스 위치에 따른 박스의 스타일 변화를 보세요
+<div class="d2">
+	<h3>가상 클랙스 2영역</h3>
+	마우스 위치에 따르박스의 스타일 변화를 보세요 
+</div>
+</body>
+</html>

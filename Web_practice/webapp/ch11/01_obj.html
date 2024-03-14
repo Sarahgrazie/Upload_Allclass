@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	span{
+		font-size:20px;
+		font-weight: bold;
+		color:darkgreen;	
+	}
+</style>
+</head>
+<body>
+			<div id ="var1"></div>
+			<div id ="var2"></div>
+			<div id ="var3"></div>
+<script>   //바로 밑에줄 데이터만 바꾸면 모든 종목 쓸 수 있다 
+	let car={name:'samsung', price:70000, vol: 100}; //변수명 
+	//변수명은 문자열이'num' : 리터럴이다 값이다 될 수 없다
+	//console.log(car);
+	let doc=document;
+	let var1=doc.getElementById('var1');
+	var1.innerHTML= "기업명: " +car.name;
+	//let var1.innerHTML='고장낫슈'; 이렇게 해도 된다 .
+	let var2=doc.getElementById(var2);
+	var2.innerHTML='현재주가: ' + '<span>' + car['price']; //정답
+	let var3=doc.getElementById(var3);
+	var3.innerHTML='거래량: ' + car.vol; //정답 . 이 더 편하다
+	
+	//화면에 실시간으로 변해야할거야 
+	
+</script>
+</body>
+</html>

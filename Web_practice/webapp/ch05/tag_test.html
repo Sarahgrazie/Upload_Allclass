@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>문자 입력 태그</h2>
+	<form>
+		<!--문자열 입력 <input type="text">-->
+		<!--name attribute
+			1. server 사용하는 변수명
+		 2. 데이터베이스 컬럼명과 동일
+		-->
+		<p>이름 <input type="text"
+		 size="10" placeholder="이름입력"></p>	
+		<p>학번 <input type="text"></p>	
+		<p>학과 <input type="text" value="컴퓨터공학"></p>	
+		<hr>
+		<p>
+			비밀번호<input type="password"
+			required placeholder="비밀번호입력">
+		</p>
+		<p>
+			하고싶은말
+			<textarea rows="5" cols="30"></textarea>
+		</p>
+		<!--필드셋 시작-->
+		<fieldset>
+			<legend>개인 정보 입력</legend>
+			<p>
+				이름 <input type="text">
+			</p>
+			<p>
+				학교 <input type="text">
+			</p>
+		</fieldset>
+		<!--필드셋 끝-->
+		<!--옵션-라디오입력양식 : 선택, 단일선택만 가능-->
+		<h3>성별선택</h3>
+		<p>
+			<input type="radio"
+			 name="sex" value="1">남자
+			<input type="radio"
+			 name="sex" value="2" checked>여자
+		</p>
+		<!--옵션 끝-->
+		<!--체크박스 - 다중선택-->
+		좋아하는 과목 선택
+		<input type="checkbox" name="subject"
+		 value="java" checked>JAVA
+		<input type="checkbox" name="subject"
+		 value="database">DATABASE
+		<input type="checkbox" name="subject"
+		 value="web">WEB
+		<!--체크박스 종료-->
+		<!--버튼 시작-->
+		<p>
+			<input type="button" value="클릭1">
+			<button type="button"
+			 7="alert('클릭2 사용');"
+			>클릭2</button>
+		</p>
+		<!--버튼 끝-->
+		<!--선택목록 시작 value : 서버로 넘가는 값-->
+		<select name="gubun">
+			<optgroup label="아주 친한 사람">
+				<option value="1">가족</option>
+				<option value="2">친구</option>
+			</optgroup>
+			<optgroup label="덜 친한 사람">
+				<option value="3">회사</option>
+				<option value="4" selected>기타</option>
+			</optgroup>
+		</select>
+		<p>시작날짜<input type="date"
+							  min="2023-10-23"
+							  max="2023-10-27">
+							  </p> 날짜 선택가능해진다.
+		<p>종료날짜<input type="date"
+		min ="2023-12-20"
+		max ="2023-12-24">
+		</p>
+		
+		생일==
+		<h3>생일</h3>
+		<p>
+			<input type ="month">
+		</p>
+		<h3>주간계획</h3>
+		<p>
+			<input type ="week">
+		</p>			
+		<h3>현재시간</h3>
+		<p>
+			<input type ="time">
+		</p>
+		<p>
+			<input type = "datetime-local"> 
+			/해당 브라우저에  국가에 맞게끔 나온다. 
+		</p>
+		<!--선택목록 끝-->
+		<!-- 색 지정 태그 -->
+		<h3>원하는 색상을 선택하세요</h3>
+		<p>
+			<input type ="color">
+		</p>
+		<!--숫자입력태그-->
+		<H3>나이 입력</H3>
+		<P>
+			<input type = "number" min="0" max="200">
+		</P>
+		<!--막대그래프-->
+		<h3>학습용 그래프</h3>
+		<p>
+			홍민성 <meter min="0" max="100"
+				 value="60"></meter><br>
+			송지효 <meter min="0.3" max="0.5"
+				 value="0.4"></meter><br>
+			이민정 <meter min="0" max="100"
+				 value="70"></meter><br>
+		</p>
+		<!--공통속성 사용-->
+		<h3>HTML5 입력 양식의 주요 속성 연습</h3>
+		<P>
+			쓰기 가능<input type="text" placeholder="이름 입력">
+		</P>
+		<P>
+			학과명 <input type="text"value="빅데이터트레이딩" readonly>
+		</P>
+		<P>
+			사용 안함 <input type="text" disabled autofocus>
+		</P>
+		<P>
+			자동 완성<input type="text" autocomplete="on" required>
+		</P>
+		
+		<p><input type="submit" value="전송"></p>
+	</form>
+</body>
+</html>
+
+
+

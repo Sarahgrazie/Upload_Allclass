@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.b{
+		font-weight: bold;
+		color: red;
+	}
+</style>
+<script>
+	let day;
+	let week = new Date().getDate();
+	switch(week){
+		case 0:	
+			day="일요일"; break;
+		case 1:	
+			day="월요일"; break;
+		case 2:	
+			day="화요일"; break;
+		case 3:	
+			day="수요일"; break;
+		case 4:	
+			day="목요일"; break;
+		case 5:	
+			day="금요일"; break;
+		case 6:	
+			day="토요일"; break;
+		default:
+			day="없는 요일"		
+	}
+	document.write("오늘은<span class='b'>" +day + "</span>입니다.")
+</script>
+</head>
+<body>
+</body>
+</html>
